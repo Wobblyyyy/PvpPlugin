@@ -17,27 +17,27 @@ public class Commands implements CommandExecutor {
         if (arguments[0].equals("join")) {
             if (arguments[1].equals("blue")) {
                 sender.sendMessage(
-                        Lang.lang.get(Lang.Messages.PREFIX) +
-                                Lang.lang.get(Lang.Messages.JOINED) +
-                                Lang.lang.get(Lang.Messages.BLUE)
+                        L.m.get(L.M.PREFIX) +
+                                L.m.get(L.M.JOINED) +
+                                L.m.get(L.M.BLUE)
                 );
                 Teams.red.players.add(player);
                 Teams.red.players.remove(player);
                 Teams.blue.players.add(player);
             } else if (arguments[1].equals("red")) {
                 sender.sendMessage(
-                        Lang.lang.get(Lang.Messages.PREFIX) +
-                                Lang.lang.get(Lang.Messages.JOINED) +
-                                Lang.lang.get(Lang.Messages.RED)
+                        L.m.get(L.M.PREFIX) +
+                                L.m.get(L.M.JOINED) +
+                                L.m.get(L.M.RED)
                 );
                 Teams.blue.players.add(player);
                 Teams.blue.players.remove(player);
                 Teams.red.players.add(player);
             } else {
                 sender.sendMessage(
-                        Lang.lang.get(Lang.Messages.PREFIX) +
-                                Lang.lang.get(Lang.Messages.ERROR) +
-                                Lang.lang.get(Lang.Messages.NOT_VALID_TEAM)
+                        L.m.get(L.M.PREFIX) +
+                                L.m.get(L.M.ERROR) +
+                                L.m.get(L.M.NOT_VALID_TEAM)
                 );
             }
         } else if (arguments[0].equals("start")) {
@@ -48,9 +48,9 @@ public class Commands implements CommandExecutor {
             switch (arguments[1]) {
                 case "archer":
                     sender.sendMessage(
-                            Lang.lang.get(Lang.Messages.PREFIX) +
-                                    Lang.lang.get(Lang.Messages.C_SELECTED) +
-                                    Lang.lang.get(Lang.Messages.ARCHER)
+                            L.m.get(L.M.PREFIX) +
+                                    L.m.get(L.M.C_SELECTED) +
+                                    L.m.get(L.M.ARCHER)
                     );
                     Game.instance.addPlayer(
                             player,
@@ -59,9 +59,9 @@ public class Commands implements CommandExecutor {
                     break;
                 case "tank":
                     sender.sendMessage(
-                            Lang.lang.get(Lang.Messages.PREFIX) +
-                                    Lang.lang.get(Lang.Messages.C_SELECTED) +
-                                    Lang.lang.get(Lang.Messages.TANK)
+                            L.m.get(L.M.PREFIX) +
+                                    L.m.get(L.M.C_SELECTED) +
+                                    L.m.get(L.M.TANK)
                     );
                     Game.instance.addPlayer(
                             player,
@@ -70,9 +70,9 @@ public class Commands implements CommandExecutor {
                     break;
                 case "mage":
                     sender.sendMessage(
-                            Lang.lang.get(Lang.Messages.PREFIX) +
-                                    Lang.lang.get(Lang.Messages.C_SELECTED) +
-                                    Lang.lang.get(Lang.Messages.MAGE)
+                            L.m.get(L.M.PREFIX) +
+                                    L.m.get(L.M.C_SELECTED) +
+                                    L.m.get(L.M.MAGE)
                     );
                     Game.instance.addPlayer(
                             player,
@@ -81,9 +81,9 @@ public class Commands implements CommandExecutor {
                     break;
                 case "swordsman":
                     sender.sendMessage(
-                            Lang.lang.get(Lang.Messages.PREFIX) +
-                                    Lang.lang.get(Lang.Messages.C_SELECTED) +
-                                    Lang.lang.get(Lang.Messages.SWORDSMAN)
+                            L.m.get(L.M.PREFIX) +
+                                    L.m.get(L.M.C_SELECTED) +
+                                    L.m.get(L.M.SWORDSMAN)
                     );
                     Game.instance.addPlayer(
                             player,
@@ -103,8 +103,8 @@ public class Commands implements CommandExecutor {
                     break;
                 default:
                     player.sendMessage(
-                            Lang.lang.get(Lang.Messages.PREFIX) +
-                                    Lang.lang.get(Lang.Messages.ERROR) +
+                            L.m.get(L.M.PREFIX) +
+                                    L.m.get(L.M.ERROR) +
                                     "Please select either red or blue team."
                     );
                     team = new Team();

@@ -9,4 +9,8 @@ public class Team {
     public ArrayList<Player> players = new ArrayList<>();
     public Location spawn;
     public Location target;
+
+    public boolean isPlayerInTeam(Player player) {
+        return players.contains(player);
+    }
 }
