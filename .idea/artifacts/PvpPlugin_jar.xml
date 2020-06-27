@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="PvpPlugin:jar">
+    <output-path>$USER_HOME$/Documents/Minecraft/Development Server/plugins</output-path>
+    <root id="archive" name="PvpPlugin.jar">
+      <element id="module-output" name="PvpPlugin" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,9 @@
+name: PvpPlugin
+version: 1.0.0
+author: Wobblyyyy
+api-version: "1.15"
+description: PvpPlugin by Colin Robertson
+main: me.wobblyyyy.pvpplugin.PvpPlugin
+commands:
+  pvpplugin:
+    aliases: pvp
